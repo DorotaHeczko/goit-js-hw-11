@@ -1,0 +1,75 @@
+
+
+body {
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-color: #d1c2c2;
+  color: #212121;
+  width: auto;
+ 
+}
+
+input {
+  margin: auto;
+  display: flex;
+  font: inherit;
+  padding: 18px;
+  border-radius: 20px;
+  width: 600px;
+ 
+}
+
+button {
+    display: flex;
+    position: relative;
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 14px;
+    border-radius:  20px;
+    background-color: #ffffff;
+    border: 2px solid black;
+    margin: 14px auto
+ 
+  }
+
+  
+  .gallery {
+    display: grid;
+    max-width: 1140px;
+    grid-template-columns: 2fr 2fr;
+    grid-auto-rows: 280px;
+    grid-gap: 200px;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
+  
+  .photo-card {
+  box-shadow: 0 15px 10px #777;
+  transform: rotate(-2deg);
+  }
+
+  .photo-card img {
+     object-fit: cover;
+    height: 100%;
+    width: 100%;
+ }
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+
+}
+
+
+.load-more {
+    visibility: hidden;
+  }
+
+
+  .load-more-show {
+    position: relative;
+    visibility: visible;
+    top: 140px;
+  }
